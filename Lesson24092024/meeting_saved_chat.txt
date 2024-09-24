@@ -1,0 +1,87 @@
+09:54:34 From Starta Institute 36 to Everyone:
+	System.out.println("Hello ");
+	        System.out.println("I ");
+	        System.out.println("learn");
+	        System.out.println("Java");
+	//        System.out.println();
+	        System.out.print("Hello ");
+	        System.out.print("I ");
+	        System.out.print("learn ");
+	        System.out.print("Java");
+10:01:09 From Starta Institute 36 to Everyone:
+	String name = "Tom";
+	int age = 30;
+	System.out.printf("Hello, my name - %s. My age - %d.", name, age);
+10:01:20 From Starta Institute 36 to Everyone:
+	https://docs.oracle.com/javase/tutorial/java/data/numberformat.html
+10:01:25 From Starta Institute 36 to Everyone:
+	https://www.digitalocean.com/community/tutorials/java-printf-method
+11:21:16 From Starta Institute 36 to Everyone:
+	System.out.println("Hello");
+	System.out.println("Java");
+	int num1 = 10;
+	int num2 = 11;
+	int res = num1 + num2;
+	System.out.printf("%d + %d = %d ", num1, num2, res);
+11:30:08 From Anton Schellhorn-Blaschewitsch to Everyone:
+	https://www.jetbrains.com/help/idea/mastering-keyboard-shortcuts.html
+11:30:27 From Anton Schellhorn-Blaschewitsch to Everyone:
+	Горячие клавиши
+11:32:00 From Starta Institute 36 to Everyone:
+	System.out.println(num1 + " + " + num2 + " = " + res);
+	System.out.printf("%d + %d = %d", num1, num2, res);
+11:43:19 From Starta Institute 36 to Everyone:
+	short num1;
+	short num2 = 11;
+	num1 = 10;
+	int res = num1 + num2;
+	System.out.println(num1 + " + " + num2 + " = " + res);
+	System.out.printf("%d + %d = %d", num1, num2, res);
+11:45:15 From Starta Institute 36 to Everyone:
+	long num2 = 11_000_000_000L;
+11:48:07 From Starta Institute 36 to Everyone:
+	byte num1;
+	long num2 = 11_000_000_000L;
+	double dbl = 3.1415;
+	float flt = 3.1415F;
+11:49:14 From Starta Institute 36 to Everyone:
+	byte num1;
+	long num2 = 11_000_000_000L;
+	double dbl = 3.1415;
+	float flt = 3.1415F;
+	num1 = 10;
+	long res = num1 + num2;
+11:50:58 From Starta Institute 36 to Everyone:
+	char ch = 'q';
+	String str = "12343";
+12:02:01 From Starta Institute 36 to Everyone:
+	boolean flag = false;
+12:03:57 From Yuliya Fralova to Everyone:
+	psvm
+12:31:57 From Starta Institute 36 to Everyone:
+	int num1 = 10;
+	double num2 = 3;
+	double res = num1 / num2;
+	System.out.println(res);
+12:32:32 From Starta Institute 36 to Everyone:
+	int num1 = 10;
+	int num2 = 3;
+	double res = num1 / num2;
+	System.out.println(res);
+12:34:26 From Starta Institute 36 to Everyone:
+	int num1 = 10;
+	        int num2 = 3;
+	//        double res = num1 / num2;
+	//        10 - 3 = 7 - 3 = 4 - 3 = 1
+	        int res = num1 % num2;
+	        System.out.println(res);
+12:35:54 From Starta Institute 36 to Everyone:
+	int num1 = 10;
+	        int num2 = 3;
+	//        double res = num1 / num2;
+	//        10 - 3 = 7 - 3 = 4 - 3 = 1
+	        int res = num1 % num2;
+	        System.out.println(res);
+	        System.out.printf("%d %% %d = %d", num1, num2, res);
+12:40:26 From Starta Institute 36 to Everyone:
+	JMM - java memory model
