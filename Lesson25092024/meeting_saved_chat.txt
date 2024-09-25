@@ -1,0 +1,96 @@
+10:48:20 From Starta Institute 36 to Everyone:
+	int primitiveType = 10;
+	Integer refType = 10;
+	System.out.println("primitiveType "  + primitiveType);
+	System.out.println("refType "  + refType);
+	char ch = 'b';
+	Character chO = 'b';
+	System.out.println("ch "  + ch);
+	System.out.println("chO "  + chO);
+10:51:51 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	//        int primitiveType = 10;
+	//        Integer refType = 10;
+	//        System.out.println("primitiveType "  + primitiveType);
+	//        System.out.println("refType "  + refType);
+	//        char ch = 'b';
+	//        Character chO = 'b';
+	//        System.out.println("ch "  + ch);
+	//        System.out.println("chO "  + chO);
+	        System.out.println(i);
+	        char ch = 'q';
+	    }
+	    
+	    public void init() {
+	        int i = 10;
+	        System.out.println(ch);
+	    }
+10:54:34 From Starta Institute 36 to Everyone:
+	public class Main {
+	    private static int num = 10;
+	    public static void main(String[] args) {
+	//        System.out.println(i);
+	        char ch = 'q';
+	        init();
+	        System.out.println(num);
+	    }
+	    public static void init() {
+	        int i = 10;
+	//        System.out.println(ch);
+	        System.out.println(num);
+	        
+	    }
+	}
+11:04:03 From Starta Institute 36 to Everyone:
+	String someString = "Java";
+	String someNewString = new String("123");
+	Object someObject = new Object();
+11:40:27 From Starta Institute 36 to Everyone:
+	public class Dog {
+	    public static String name = "Spike";
+	}
+11:40:42 From Starta Institute 36 to Everyone:
+	Dog spike = new Dog();
+	System.out.println(Dog.name);
+12:15:34 From Starta Institute 36 to Everyone:
+	Scanner inputData = new Scanner(System.in);
+	System.out.println("Enter a string:");
+	String userInput = inputData.next();
+	System.out.println("You entered the first word - " + userInput);
+12:25:10 From Starta Institute 36 to Everyone:
+	String inputLine = inputData.nextLine();
+	System.out.println("Input line - " + inputLine);
+12:29:13 From Starta Institute 36 to Everyone:
+	int userNumber = inputData.nextInt();
+	System.out.println("The integer" + userNumber);
+12:33:03 From Starta Institute 36 to Everyone:
+	double userDouble = inputData.nextDouble();
+	System.out.println(userDouble);
+12:33:33 From Starta Institute 36 to Everyone:
+	Создать объект Scanner
+	Получить от пользователя первое число
+	Получить от пользователя второе число
+	Произвести математические операции +, -, *, /
+	Вывести результат в консоль
+12:52:13 From olegpykhonin to Everyone:
+	package animal;
+	
+	import java.util.Scanner;
+	
+	public class Cat {
+	    public static void main(String[] args) {
+	        Scanner input1 = new Scanner(System.in);
+	        System.out.println("Enter number please: ");
+	        double num1 = input1.nextDouble();
+	
+	        System.out.println("Enter number please: ");
+	
+	        double num2 = input1.nextDouble();
+	
+	        System.out.printf("%.2f + %.2f = %.2f%n", num1,num2,(num1+num2) );
+	        System.out.printf("%.2f - %.2f = %.2f%n", num1,num2,(num1-num2) );
+	        System.out.printf("%.2f * %.2f = %.2f%n", num1,num2,(num1*num2) );
+	        System.out.printf("%.2f / %.2f = %.2f%n", num1,num2,(num1/num2) );
+	
+	
+	    }
