@@ -1,0 +1,93 @@
+10:09:53 From Starta Institute 36 to Everyone:
+	String str = "Java";
+	System.out.println(str);
+	System.out.println(str.hashCode());
+	str = str + "!!!";
+	System.out.println(str);
+	System.out.println(str.hashCode());
+10:22:06 From Starta Institute 36 to Everyone:
+	int strLength = str.length();
+	System.out.println(strLength);
+10:34:03 From Starta Institute 36 to Everyone:
+	System.out.println(str.substring(4));
+	System.out.println(str.substring(3, 5));
+10:50:57 From Starta Institute 36 to Everyone:
+	String upperCaseString = "JAVA";
+	System.out.println(upperCaseString);
+	System.out.println(upperCaseString.toLowerCase());
+	String lowerCaseString = "java";
+	System.out.println(lowerCaseString);
+	System.out.println(lowerCaseString.toUpperCase());
+11:29:36 From Starta Institute 36 to Everyone:
+	Создать строку “I like Java”
+	Распечатать последний символ строки. Используем метод String.charAt().
+	Проверить, заканчивается ли ваша строка подстрокой “!!!”. Используем метод String.endsWith().
+	Проверить, начинается ли ваша строка подстрокой “I like”. Используем метод String.startsWith().
+	Проверить, содержит ли ваша строка подстроку “Java”. Используем метод String.contains().
+11:42:59 From Anton Schellhorn-Blaschewitsch to Starta Institute 36(direct message):
+	String java = "I study java!";	        System.out.println(java.charAt(11));	        System.out.println(java.endsWith());	        System.out.println(java.startsWith());	        System.out.println(java.contains());	У меня везде ругается,я что то не до понял видимо...
+11:44:09 From Alexandra Kuzhner to Everyone:
+	+
+11:44:50 From Ella to Everyone:
+	+
+11:45:36 From Konstantin Sierikov to Everyone:
+	+
+11:56:47 From Kateryna Vasylenko to Everyone:
+	+
+11:56:50 From olegpykhonin to Everyone:
+	+
+11:56:54 From Serhii Kurlykin to Everyone:
+	+
+11:57:01 From Андрей Григоренко to Everyone:
+	+
+11:57:23 From Mykhail Hubko to Everyone:
+	+
+11:57:40 From Anton Schellhorn-Blaschewitsch to Everyone:
+	String java = "I like Java!";	        System.out.println(java.charAt(java.length()-1));	        System.out.println(java.endsWith("!!!"));	        System.out.println(java.startsWith("I like"));	        System.out.println(java.contains("Java"));
+11:58:20 From Alyona Kolesnyk to Everyone:
+	Reacted to "String java = "I lik..." with 👍
+12:07:28 From Starta Institute 36 to Everyone:
+	byte byteNum = 100;
+	System.out.println(byteNum);
+	short shortNum = byteNum;
+	System.out.println(shortNum);
+	int intNum = byteNum;
+	double doubleNum = byteNum;
+12:11:09 From Starta Institute 36 to Everyone:
+	int intNum = 129;
+	System.out.println(intNum);
+	byte byteNum = (byte)intNum;
+	System.out.println(byteNum);
+12:14:46 From Starta Institute 36 to Everyone:
+	int intNum = 33000;
+	        System.out.println(intNum);
+	//        byte byteNum = (byte)intNum;
+	//        System.out.println(byteNum);
+	        short shortNum = (short) intNum;
+	        System.out.println(shortNum);
+12:21:37 From Starta Institute 36 to Everyone:
+	int num1 = 10;
+	        double num2 = 20;
+	        int res = (int)(num1 + num2);
+	//        System.out.println(num1 + num2);
+	        System.out.println(res);
+12:32:23 From Starta Institute 36 to Everyone:
+	//        int to char using ASCII
+	        int num = 65;
+	        char ch = (char)num;
+	        System.out.println(ch);
+	        char chToInt = 'A';
+	        int numChar = chToInt;
+	        System.out.println(numChar);
+12:42:49 From Starta Institute 36 to Everyone:
+	//        String.valueOf() UNICODE
+	        char chValueOf = String.valueOf('\u0078').charAt(0);
+	        System.out.println(chValueOf);
+12:45:50 From Starta Institute 36 to Everyone:
+	//        Char.getNumericValue()
+	        char chGetNumericValue = Character.valueOf('\u0078');
+	        System.out.println(chGetNumericValue);
+12:46:42 From Starta Institute 36 to Everyone:
+	//        Char.getNumericValue()
+	        int chGetNumericValue = Character.getNumericValue('A');
+	        System.out.println(chGetNumericValue);
