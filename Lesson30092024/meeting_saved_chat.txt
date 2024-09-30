@@ -1,0 +1,139 @@
+09:30:39 From Mykhail Hubko to Everyone:
+	Доброе утро )
+09:39:48 From Starta Institute 36 to Everyone:
+	javac Main.java
+09:40:55 From Starta Institute 36 to Everyone:
+	java Main
+10:13:55 From Starta Institute 36 to Everyone:
+	Создайте новый простой проект compilation-java
+	Создайте класс TestCompilation.java
+	Создайте метод main
+	Добавьте инструкцию System.out.println(“Compilation was successful”)
+	Откройте терминал в папке где вы создали класс из п. 1
+	Скомпилируйте код - введите команду: javac TestCompilation.java
+	Запустите java-программу командой: java TestCompilation
+10:15:46 From Mykyta Shcherbakov to Everyone:
+	+
+10:17:28 From Yuliya Fralova to Everyone:
+	+
+10:17:57 From Konstantin Sierikov to Everyone:
+	+
+10:18:35 From Anton Schellhorn-Blaschewitsch to Everyone:
+	+
+10:19:13 From Kateryna Vasylenko to Everyone:
+	+
+10:19:17 From Karpenko Oleksandr to Everyone:
+	+
+10:19:25 From Ella to Everyone:
+	+
+10:28:47 From Starta Institute 36 to Everyone:
+	public class Car {
+	    public String name;
+	    public int year;
+	//    default constructor
+	    public Car() {}
+	
+	}
+10:29:05 From Starta Institute 36 to Everyone:
+	//        System.out.println("Hello Java!!!");
+	        Car car = new Car();
+	//      before initialization
+	        System.out.println(car.year);
+	        System.out.println(car.name);
+	//      after init
+	//        car.name = "Audi";
+	//        car.year = 2002;
+10:29:12 From Starta Institute 36 to Everyone:
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Enter a name");
+	car.name = sc.nextLine();
+	System.out.println("Enter a year");
+	car.year = sc.nextInt();
+	System.out.println(car.year);
+	System.out.println(car.name);
+10:29:56 From Starta Institute 36 to Everyone:
+	public class Car {
+	    private String name;
+	    private int year;
+	//    default constructor
+	    public Car() {}
+	
+	}
+10:33:32 From Starta Institute 36 to Everyone:
+	public class Car {
+	    private String name;
+	    private int year;
+	//    default constructor
+	    public Car() {}
+	
+	    public Car(String name) {
+	        this.name = name;
+	    }
+	
+	    @Override
+	    public String toString() {
+	        return "Name: " + this.name + ", year: " + this.year;
+	    }
+	}
+10:40:57 From Starta Institute 36 to Everyone:
+	import java.lang.ref.SoftReference;
+	
+	public class Car {
+	    private String name;
+	    private int year;
+	//    default constructor
+	    public Car() {}
+	
+	    public Car(String name) {
+	        this.name = name;
+	    }
+	
+	    public Car(int year) {
+	        this.year = year;
+	    }
+	
+	    public Car(String name, int year) {
+	        this.name = name;
+	        this.year = year;
+	    }
+	
+	    @Override
+	    public String toString() {
+	        return "Name: " + this.name + ", year: " + this.year;
+	    }
+	}
+10:41:07 From Starta Institute 36 to Everyone:
+	Car toyota = new Car("Toyota");
+	System.out.println(toyota);
+	
+	Car toyota1991 = new Car(1991);
+	System.out.println(toyota1991);
+	
+	Car toyota2020 = new Car("Toyota", 2020);
+	System.out.println(toyota2020);
+11:15:48 From Alyona Kolesnyk to Everyone:
+	package Lessons.Lesson6;		public class Car {	    public String name;	    public int year;	    //    default constructor	    public Car() {}				        public Car(String name) {	            this.name = name;	        }	        public Car(int year) {	        this.year = year;}	         public Car(String name, int year){	        this.name = name;	        this.year = year; }			        @Override	        public String toString() {	            return "Name: " + this.name + ", year: " + this.year;	        }	    }
+11:16:07 From Alyona Kolesnyk to Everyone:
+	package Lessons.Lesson6;		import java.util.Scanner;		public class Main {	    public static void main(String[] args) {	        Scanner sc = new Scanner(System.in);	       /* System.out.println("Enter a name");	        car.name = sc.nextLine();	        System.out.println("Enter a year");	        car.year = sc.nextInt();	        System.out.println(car.year);	        System.out.println(car.name); */	        Car bmw = new Car("BMW"); // создание объекта	        System.out.println(bmw);	        Car year = new Car (2020);	        System.out.println(year);	        Car ferrari = new Car ("ferrari",2020);	        System.out.println(ferrari);		    }			}
+12:03:07 From Starta Institute 36 to Everyone:
+	Создайте класс Кот
+	Создайте конструктор по умолчанию
+	Создайте класс Тест
+	Создайте экземпляр класса Кот
+	Добавьте в класс Кот два конструктора с параметрами
+	Удалите конструктор по умолчанию
+	Удалите this из конструктора, переименуйте параметры
+12:10:27 From Anton Schellhorn-Blaschewitsch to Starta Institute 36(direct message):
+	public class Cat {	    public String name;	    public int age;	    public String color;	    	    public Cat(String name,int age,String color) {	        this.name = name;	        this.age = age;	        this.color = color;	    }	}
+12:12:47 From Mykyta Shcherbakov to Everyone:
+	+
+12:13:04 From Yuliya Fralova to Everyone:
+	+
+12:46:25 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	    int num = 45;
+	    int system = 2;
+	    System.out.println("decimal " + num + " = " + Long.toString(num, system) + " binary");
+	}
+12:49:10 From Starta Institute 36 to Everyone:
+	0x010
