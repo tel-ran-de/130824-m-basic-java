@@ -1,0 +1,360 @@
+09:38:50 From Starta Institute 36 to Everyone:
+	public static int getUserInput() {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Enter a number");
+	//        1
+	//        int res = sc.nextInt();
+	//        return res;
+	//        2
+	        return sc.nextInt();
+	    }
+09:39:02 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	        int num1 = getUserInput();
+	        int num2 = getUserInput();
+	        int res = num1 + num2;
+	        System.out.println(num1 + num2);
+	        System.out.println(num1 + " + " + num2 + " = " + res);
+	
+	//        num1 = getUserInput();
+	//        num2 = getUserInput();
+	        res = num1 + num2;
+	        System.out.println(num1 + num2);
+	        System.out.println(num1 + " + " + num2 + " = " + res);
+	
+	//        num1 = getUserInput();
+	//        num2 = getUserInput();
+	        res = num1 + num2;
+	        System.out.println(num1 + num2);
+	        System.out.println(num1 + " + " + num2 + " = " + res);
+	    }
+09:46:14 From Starta Institute 36 to Everyone:
+	public static int add(int num1, int num2) {
+	    return num1 + num2;
+	}
+	
+	public static void simplePrint(int res) {
+	    System.out.println(res);
+	}
+	
+	public static void formatPrintResult(int num1, int num2, int res) {
+	    System.out.println(num1 + " + " + num2 + " = " + res);
+	}
+09:46:27 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	    int num1 = getUserInput();
+	    int num2 = getUserInput();
+	    int res = add(num1, num2);
+	    simplePrint(res);
+	    formatPrintResult(num1, num2, res);
+	
+	    int num3 = getUserInput();
+	    int num4 = getUserInput();
+	    int res2 = add(num3, num4);
+	    simplePrint(res2);
+	    formatPrintResult(num3, num4, res2);
+	
+	    int num5 = getUserInput();
+	    int num6 = getUserInput();
+	    int res3 = add(num5, num6);
+	    simplePrint(res3);
+	    formatPrintResult(num5, num6, res3);
+	}
+09:48:12 From Starta Institute 36 to Everyone:
+	public class Main {
+	    public static void main(String[] args) {
+	        int num1 = getUserInput();
+	        int num2 = getUserInput();
+	        int res = add(num1, num2);
+	        simplePrint(res);
+	        formatPrintResult(num1, num2, res);
+	
+	        int num3 = getUserInput();
+	        int num4 = getUserInput();
+	        int res2 = add(num3, num4);
+	        simplePrint(res2);
+	        formatPrintResult(num3, num4, res2);
+	
+	        int num5 = getUserInput();
+	        int num6 = getUserInput();
+	        int res3 = add(num5, num6);
+	        simplePrint(res3);
+	        formatPrintResult(num5, num6, res3);
+	    }
+	
+	    public static int getUserInput() {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Enter a number");
+	//        1
+	//        int res = sc.nextInt();
+	//        return res;
+	//        2
+	        return sc.nextInt();
+	    }
+09:48:21 From Starta Institute 36 to Everyone:
+	public static int add(int num1, int num2) {
+	        return num1 + num2;
+	    }
+	
+	    public static void simplePrint(int res) {
+	        System.out.println(res);
+	    }
+	
+	    public static void formatPrintResult(int num1, int num2, int res) {
+	        System.out.println(num1 + " + " + num2 + " = " + res);
+	    }
+	}
+09:53:22 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	//        1
+	        int num1 = getUserInput();
+	        int num2 = getUserInput();
+	        int res = add(num1, num2);
+	        simplePrint(res);
+	        formatPrintResult(num1, num2, res);
+	
+	//        2
+	//        int num3 = getUserInput();
+	//        int num4 = getUserInput();
+	//        int res2 = add(num3, num4);
+	//        simplePrint(add(num3, num4));
+	        formatPrintResult(getUserInput(), getUserInput(), add(getUserInput(), getUserInput()));
+	
+	//        int num5 = getUserInput();
+	//        int num6 = getUserInput();
+	//        int res3 = add(num5, num6);
+	//        simplePrint(res3);
+	//        formatPrintResult(num5, num6, res3);
+	    }
+09:55:49 From Starta Institute 36 to Everyone:
+	int num3 = getUserInput();
+	        int num4 = getUserInput();
+	//        int res2 = add(num3, num4);
+	//        simplePrint(add(num3, num4));
+	        formatPrintResult(num3, num4, add(num3, num4));
+10:22:21 From Starta Institute 36 to Everyone:
+	SOLID
+10:50:36 From Starta Institute 36 to Everyone:
+	//    public - visibility in project 
+	//    int - return type
+	//    getUserInput - method name
+	//    () - input params
+	//    { - method body open tag
+	    public static int getUserInput() {
+	//        create Scanner with name sc to read data from console
+	        Scanner sc = new Scanner(System.in);
+	//      print string "Enter a number" for user
+	        System.out.println("Enter a number");
+	//        res - value from user console int input
+	//        nextInt() - method from class Scanner, get only int value
+	        int res = sc.nextInt();
+	//        return value from method and end of method
+	        return res;
+	//        doesn't return
+	//        System.out.println("Hello");
+	    }
+10:58:41 From Starta Institute 36 to Everyone:
+	//    public static - access modification
+	//    void - return value(nothing)
+	//    printFormatResult - method name
+	//    (int num1, int num2, int res) - method params. num1, num2, res - parameters
+	    public static void printFormatResult(int num1, int num2, int res) {
+	//        print format string with params (num1, num2, res)
+	        System.out.println(num1 + " + " + num2 + " = " + res);
+	    }
+11:26:56 From Starta Institute 36 to Everyone:
+	public class Main {
+	    public static void main(String[] args) {
+	//        Scanner sc = new Scanner(System.in);
+	//        System.out.println("Enter an integer");
+	//        int num = sc.nextInt();
+	//        System.out.println(num);
+	
+	//        1
+	        int num1 = getUserIntInput();
+	        int num2 = getUserIntInput();
+	        int res = add(num1, num2);
+	        printSimple(res);
+	        printFormatResult(num1, num2, res);
+	
+	        double num3 = getUserDoubleInput();
+	        double num4 = getUserDoubleInput();
+	        double res2 = add(num3, num4);
+	        printSimple(res2);
+	        printFormatResult(num3, num4, res2);
+11:27:02 From Starta Institute 36 to Everyone:
+	}
+11:27:09 From Starta Institute 36 to Everyone:
+	public static int getUserIntInput() {
+	//        create Scanner with name sc to read data from console
+	        Scanner sc = new Scanner(System.in);
+	//      print string "Enter a number" for user
+	        System.out.println("Enter a number");
+	//        res - value from user console int input
+	//        nextInt() - method from class Scanner, get only int value
+	        int res = sc.nextInt();
+	//        return value from method and end of method
+	        return res;
+	//        doesn't return
+	//        System.out.println("Hello");
+	    }
+	
+	    public static double getUserDoubleInput() {
+	        Scanner sc = new Scanner(System.in);
+	        System.out.println("Enter a number");
+	        double res = sc.nextDouble();
+	        return res;
+	    }
+	
+	    public static int add(int num1, int num2) {
+	        return num1 + num2;
+	    }
+	
+	    public static int add(int num1, int num2, int num3) {
+	        return num1 + num2 + num3;
+	    }
+11:27:23 From Starta Institute 36 to Everyone:
+	public static double add(double num1, double num2) {
+	        return num1 + num2;
+	    }
+	
+	    public static void printSimple(int res) {
+	        System.out.println(res);
+	    }
+	
+	    public static void printSimple(double res) {
+	        System.out.println(res);
+	    }
+	
+	//    public static - access modification
+	//    void - return value(nothing)
+	//    printFormatResult - method name
+	//    (int num1, int num2, int res) - method params. num1, num2, res - parameters
+	    public static void printFormatResult(int num1, int num2, int res) {
+	//        print format string with params (num1, num2, res)
+	        System.out.println(num1 + " + " + num2 + " = " + res);
+	    }
+	
+	    public static void printFormatResult(double num1, double num2, double res) {
+	//        print format string with params (num1, num2, res)
+	        System.out.println(num1 + " + " + num2 + " = " + res);
+	    }
+	}
+11:31:27 From Starta Institute 36 to Everyone:
+	Создайте метод getSum(int a, int b), который ничего не возвращает, и печатает результат суммы двух полученных чисел в консоль.
+	
+	Создайте метод getReturnSum(int a, int b), который возвращает результат - сумма двух чисел, а печать в консоль производит вызывающий метод.
+11:43:44 From Kateryna Vasylenko to Everyone:
+	public class Lesson_06 {	    public static void main(String[] args) {	//        Scanner sc = new Scanner(System.in);	//        System.out.println("Enter an integer");	//        int num = sc.nextInt();	//        System.out.println(num);		//        1	        int num1 = getUserIntInput();	        int num2 = getUserIntInput();	        int res = add(num1, num2);	        printSimple(res);	        printFormatResult(num1, num2, res);		        double num3 = getUserDoubleInput();	        double num4 = getUserDoubleInput();	        double res2 = add(num3, num4);	        printSimple(res2);	        printFormatResult(num3, num4, res2);	    }
+11:44:08 From Kateryna Vasylenko to Everyone:
+	public static double getUserDoubleInput() {	        Scanner sc = new Scanner(System.in);	        System.out.println("Enter a double");	        double res = sc.nextDouble();	        return res;	    }	    public static int getUserIntInput() {	//        create Scanner with name sc to read data from console	        Scanner sc = new Scanner(System.in);	//      print string "Enter a number" for user	        System.out.println("Enter a number");	//        res - value from user console int input	//        nextInt() - method from class Scanner, get only int value	        int res = sc.nextInt();	//        return value from method and end of method	        return res;	//        doesn't return	//        System.out.println("Hello");	    }
+11:44:51 From Kateryna Vasylenko to Everyone:
+	public static int add(int num1, int num2) {	    return num1 + num2;	}	public static int add(int num1, int num2, int num3) {	    return num1 + num2 + num3;	}	    public static double add ( double num1, double num2){	        return num1 + num2;	    }		    public static void printSimple ( int res){	        System.out.println(res);	    }		    public static void printSimple ( double res){	        System.out.println(res);	    }
+11:45:02 From Kateryna Vasylenko to Everyone:
+	public static - access modification	//    void - return value(nothing)	//    printFormatResult - method name	//    (int num1, int num2, int res) - method params. num1, num2, res - parameters	        public static void printFormatResult ( int num1, int num2, int res){	//        print format string with params (num1, num2, res)	            System.out.println(num1 + " + " + num2 + " = " + res);	        }		        public static void printFormatResult ( double num1, double num2, double res){	//        print format string with params (num1, num2, res)	            System.out.println(num1 + " + " + num2 + " = " + res);	        }	    }
+11:46:02 From Alyona Kolesnyk to Everyone:
+	Reacted to "public static - acce..." with 👍
+11:47:24 From Ella to Everyone:
+	+
+11:48:21 From Oxana Furman to Everyone:
+	+
+11:48:31 From Mykyta Shcherbakov to Everyone:
+	+
+11:48:41 From Anton Schellhorn-Blaschewitsch to Everyone:
+	+
+11:51:55 From Alexandra Kriviz to Everyone:
+	+
+11:52:37 From Yuliya Fralova to Everyone:
+	/*Создайте метод getSum(int a, int b), который ничего не возвращает,
+	и печатает результат суммы двух полученных чисел в консоль.*/
+	public static void getSum(int a, int b) {
+	    System.out.println(a + b);
+	}
+	/*Создайте метод getReturnSum(int a, int b),
+	который возвращает результат - сумма двух чисел, а печать в консоль производит вызывающий метод */
+	public static int getReturnSum(int a, int b) {
+	    return a + b;
+	}
+12:12:51 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	    Random rand = new Random();
+	    int randNum1 = rand.nextInt(); // number from -2**31 to 2**31 - 1 (int size)
+	    int randNum2 = rand.nextInt(10); // from 0 to bound - 1 (10 - 1 = 9)
+	    int randNum3 = rand.nextInt(10, 100); // from origin(10) to bound - 1 (100 - 1 = 99)
+	
+	    System.out.println("randNum1 = " + randNum1);
+	    System.out.println("randNum2 = " + randNum2);
+	    System.out.println("randNum3 = " + randNum3);
+	
+	    double doubleNum1 = rand.nextDouble();
+	    double doubleNum2 = rand.nextDouble(10);
+	    double doubleNum3 = rand.nextDouble(10, 50);
+	    System.out.println("doubleNum1 = " + doubleNum1); // from 0 to 1
+	    System.out.println("doubleNum2 = " + doubleNum2); // from 0 to 10 - 1
+	    System.out.println("doubleNum3 = " + doubleNum3); // from 10 to 50 - 1 
+	}
+12:15:40 From Starta Institute 36 to Everyone:
+	public static void main(String[] args) {
+	//        create variable with type - Random and name - rand
+	        Random rand = new Random();
+	        int randNum1 = rand.nextInt(); // number from -2**31 to 2**31 - 1 (int size)
+	        int randNum2 = rand.nextInt(10); // from 0 to bound - 1 (10 - 1 = 9)
+	        int randNum3 = rand.nextInt(10, 100); // from origin(10) to bound - 1 (100 - 1 = 99)
+	
+	        System.out.println("randNum1 = " + randNum1);
+	        System.out.println("randNum2 = " + randNum2);
+	        System.out.println("randNum3 = " + randNum3);
+	
+	        double doubleNum1 = rand.nextDouble();
+	        double doubleNum2 = rand.nextDouble(10);
+	        double doubleNum3 = rand.nextDouble(10, 50);
+	        System.out.println("doubleNum1 = " + doubleNum1); // from 0 to 1
+	        System.out.println("doubleNum2 = " + doubleNum2); // from 0 to 10 - 1
+	        System.out.println("doubleNum3 = " + doubleNum3); // from 10 to 50 - 1
+	    }
+12:21:37 From Starta Institute 36 to Everyone:
+	//       call method random() from Math class
+	        double num = Math.random(); // double from 0 to 1
+	        System.out.println("num = " + num);
+	
+	//        Math.random()*(max-min+1)+min
+	        int minVal = 10;
+	        int maxVal = 50;
+	        int randValue = (int)(Math.random() * (maxVal - minVal) + minVal);
+	        System.out.println("randValue = " + randValue);
+12:26:47 From Starta Institute 36 to Everyone:
+	//        Math.random()*(max-min+1)+min
+	//        Math.random() => from 0 to 1
+	//        max-min+1 => 50 - 10 + 1 = 41
+	//        Math.random()*(max-min+1) => from 0 to 41 - 1 = 40 double
+	//        Math.random()*(max-min+1)+min => from 10 to 51(51 - 1 = 50)
+	        int minVal = 10;
+	        int maxVal = 50;
+	        int randValue = (int)(Math.random() * (maxVal - minVal + 1) + minVal);
+	        System.out.println("randValue = " + randValue);
+12:32:18 From Starta Institute 36 to Everyone:
+	Использование Random класса:
+	Импортировать класс java.util.Random
+	Создать экземпляр класса Random (Random rand = new Random())
+	Вызовите один из следующих методов объекта rand:
+	nextInt(upperbound) генерирует случайные числа в диапазоне от 0 до upper bound -1.
+	nextFloat() генерирует число с плавающей запятой от 0,0 до 1,0.
+	nextDouble() генерирует двойное число между 0.0 и 1.0.
+12:34:17 From Mykyta Shcherbakov to Everyone:
+	+
+12:36:16 From Maksims Ščurovskis to Everyone:
+	+
+12:36:21 From Yuliya Fralova to Everyone:
+	+
+12:38:57 From Starta Institute 36 to Everyone:
+	Использование Math.random 
+	
+	Объявить минимальное значение диапазона
+	Объявить максимальное значение диапазона
+	Используйте формулу Math.random()*(max-min+1)+min для создания значений, включающих значение min и max
+12:40:22 From Maksims Ščurovskis to Everyone:
+	+
+12:40:52 From Mykyta Shcherbakov to Everyone:
+	+
+12:41:07 From Alexandra Kuzhner to Everyone:
+	+
